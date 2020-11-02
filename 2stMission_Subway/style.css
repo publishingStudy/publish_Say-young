@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "subway";
+    src:url('font/NotoSansKR-Bold.otf') format('opentype');
+    src:url('font/NotoSansKR-Medium.otf') format('opentype');
+    src:url('font/NotoSansKR-Regular.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    font-family: subway;
+    margin:0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.header{
+    position: relative;
+    width:100%;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.greenline{
+    border-top: 5px solid #009223;
+    position: absolute;
+    width: 100%;
+    left:0;
+    top:0;
+}
+
+.header .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.header .top .sign{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 13px;
+    font-weight: normal;
+    right: 185px;
+    top : 38px;
+    color : #555555;
+}
+
+.header .top .sign .dot{
+    margin: 12px;
+    font-weight: bold;
+    color: #e5e5e5;
+}
+
+.header .top .sign .signin{
+    cursor: pointer;
+}
+
+.header .top .sign .signup{
+    margin: 10px;
+    margin-right : 15px;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.header .top .logo{
+    width: auto;
+    height: auto;
+    max-width : 200px;
+    margin-top : 10px;
+    margin-right : 20px;
+    cursor: pointer;
+}
+
+.header .nav{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+    background-color:#ffffff;
+    z-index : 10;
+}
+
+.header .nav .mainMenu{
+    margin : 10px 55px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header .nav .item:hover{
+    color: #009223;
+}
+
+.header .nav ul{
+    padding: 0;
+}
+
+.header .nav .line{
+    position: absolute;
+    left : 0;
+    width:100%;
+    border-bottom: solid 2px #e5e5e5;
+}
+
+.header .nav:hover .subMenu{
+    display: flex;
+}
+
+.header .nav .subMenu{
+    padding-top : 15px;
+}
+
+.header .nav .subMenu li{
+    list-style: none;
+    margin: 8px;
+    color: #6a6a6a;
+    font-size : 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.header .nav .subMenu li:hover{
+    color: #009223;
+}
+
+.header .nav .subMenu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.section .slidewrap{
+    display: flex;
+    position:absolute;
+    top:21%;
+    width:100%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.section .slide{
+    position: absolute;
+    z-index:10;
+    top: 68%;
+    right: 10%;
+}
+
+.quick_link_content {
+    white-space: nowrap;
+    position:absolute;
+    right:37%;
+    top:73%;
+    font-size:0;
+    z-index:10;
+}
+
+.quick_link_content .store{
+    display:inline-block;
+    background-color: #f5c73b;
+    cursor: pointer;
+    border-radius: 40px 0 0 0;
+    width:120%;
+    padding: 12%;
+    text-align:center;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.quick_link_content .franchise{
+    display:inline-block;
+    background-color: #178c3b;
+    cursor: pointer;
+    border-radius: 0 0 40px 0;
+    width:120%;
+    padding: 12%;
+    text-align:center;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.section_subway_menu {
+    position:absolute;
+    top:88%;
+    left:10%;
+}
+
+.section_subway_menu .menuTitle{
+    font-size:26px;
+    font-weight:bold;
+}
+
+.section_subway_menu .tab{
+    position:relative;
+    right:10px;
+}
+
+.section_subway_menu .tab ul {
+    list-style: none;
+    font-weight: bold;
+    color: #5b5b5b;
+    cursor: pointer;
+}
+
+.section_subway_menu .tab li {
+    float: left;
+    margin : 10px;
+}
+
+.section_subway_menu .tab .active{
+    color: #009223;
+}
+
+.section_subway_menu .tab .shortline {
+    border-left : solid 2px #e5e5e5;
+}

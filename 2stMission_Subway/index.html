@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>SUBWAY 써브웨이</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class = "greenline"></div>
+                
+            <div class="top">
+                <img class="logo" src="logo.png">
+                <div class="sign">
+                    <div class="signin">로그인</div>
+                    <div class="dot">•</div>
+                    <div class="signup">회원가입</div>
+                    <img src="https://www.subway.co.kr/images/common/icon_utill_global.png">
+                </div>
+            </div>
+
+            <nav class="nav">
+                <li class="item">
+                    <ul><div class="mainMenu">메뉴소개</div></ul>
+                    <div class = "line"></div>
+                    <ul class="subMenu">
+                        <li>샌드위치</li>
+                        <li>랩 • 기타</li>
+                        <li>찹샐러드</li>
+                        <li>스마일 썹</li>
+                        <li>단체메뉴</li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <ul><div class="mainMenu">이용방법</div></ul>
+                    <ul class="subMenu">
+                        <li>써브웨이 이용방법</li>
+                        <li>단체메뉴 이용방법</li>
+                        <li>신선한 재료 소개</li>
+                        <li>App 이용방법</li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <ul><div class="mainMenu">새소식</div></ul>
+                    <ul class="subMenu">
+                        <li>이벤트 • 프로모션</li>
+                        <li>뉴스 • 공지사항</li>
+                        <li>광고영상</li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <ul><div class="mainMenu">써브웨이</div></ul>
+                    <ul class="subMenu">
+                        <li>써브웨이 역사</li>
+                        <li>써브웨이 약속</li>
+                        <li>샌드위치 아티스트 지원</li>
+                        <li>매장찾기</li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <ul><div class="mainMenu">가맹점</div></ul>
+                    <ul class="subMenu">
+                        <li>써브웨이 프렌차이즈</li>
+                        <li>가맹관련FAQ</li>
+                        <li>가맹신청 • 문의</li>
+                        <li>지사안내</li>
+                        <li>사업설명회</li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <ul><div class="mainMenu">온라인주문</div></ul>
+                    <ul class="subMenu">
+                        <li>FAST • SUB</li>
+                        <li>HOME • SUB</li>
+                        <li>단체주문</li>
+                    </ul>
+                </li>
+            </nav>
+        </header>
+
+        <div class = "section">
+            <div class="slidewrap">
+                <div class="event-banner">
+                    <img id="imgSlide" src="img/main_PC_1920x440_20201007112359990.jpg">
+                </div>
+            </div>
+            <div class = "slide">
+                <input type = "radio" name = "slide" id="slide01" onclick="checkRadioBtn(this.id)" checked>
+                <input type = "radio" name = "slide" id="slide02" onclick="checkRadioBtn(this.id)">
+                <input type = "radio" name = "slide" id="slide03" onclick="checkRadioBtn(this.id)">
+                <input type = "radio" name = "slide" id="slide04" onclick="checkRadioBtn(this.id)">
+                <input type = "radio" name = "slide" id="slide05" onclick="checkRadioBtn(this.id)">
+                <input type = "radio" name = "slide" id="slide06" onclick="checkRadioBtn(this.id)">
+                <!--원본
+                <div class="bx-pager-item">
+                    <a href="" data-slide-index="0" class="bx-pager-link active">1</a>
+                </div>
+                <div class="bx-pager-item">
+                    <a href="" data-slide-index="1" class="bx-pager-link">2</a>
+                </div>
+                -->
+            </div>
+        </div>
+
+        <div class = "quick_link_content">
+            <div class = "store">
+                <a>
+                    <div class = "inside" id = "inside01">
+                        <!--아이콘-->
+                        매장찾기
+                    </div>
+                </a>
+            </div>
+            <div class = "franchise">
+                <a>
+                    <div class = "inside" id = "inside02">
+                        <!--아이콘-->
+                        가맹신청 • 문의
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class = "section_subway_menu">
+            <div class="menuTitle">
+                Subway's Menu
+            </div>
+            <div class="tab">
+				<ul>
+                    <li class="active">
+                        <a>클래식</a>
+                        <div class = "shortline"></div>
+                    </li>
+                    <li>
+                        <a>프레쉬&라이트</a>
+                        <div class = "shortline"></div>
+                    </li>
+                    <li>
+                        <a>프리미엄</a>
+                        <div class = "shortline"></div>
+                    </li>
+                    <li>
+                        <a>아침메뉴</a>
+                        <div class = "shortline"></div>
+                    </li>
+				</ul>
+			</div>
+        </div>
+
+
+    </body>
+    <script src="script.js"></script>
+</html>
